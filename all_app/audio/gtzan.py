@@ -12,9 +12,6 @@ from audio_recorder_streamlit import audio_recorder
 from all_app.db.models import Gtzan
 from all_app.db.database import SessionLocal
 
-# -----------------------------
-# === Настройки и модель ===
-# -----------------------------
 
 def get_db():
     db = SessionLocal()
@@ -66,10 +63,6 @@ model.to(device)
 model.eval()
 
 
-# -----------------------------
-# === Функции обработки ===
-# -----------------------------
-
 def change_audio(waveform, sr):
     if sr != 22050:
         resample = torchaudio.transforms.Resample(orig_freq=sr, new_freq=22050)
@@ -84,9 +77,6 @@ def change_audio(waveform, sr):
     return spec
 
 
-# -----------------------------
-# === Streamlit интерфейс ===
-# -----------------------------
 
 def gtzan_stream():
     """Современный UI для классификации жанра"""
@@ -149,7 +139,6 @@ def gtzan_stream():
     st.markdown("<h2>🎶 Классификация музыкальных жанров</h2>", unsafe_allow_html=True)
     st.markdown("<p class='desc'>Загрузите файл или запишите аудио для определения жанра музыки</p>", unsafe_allow_html=True)
 
-    # === Переключатель режимов ===
     if "gtzan_mode" not in st.session_state:
         st.session_state["gtzan_mode"] = "upload"
 
