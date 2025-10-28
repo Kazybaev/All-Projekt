@@ -12,7 +12,7 @@ import streamlit as st
 
 news_router = APIRouter(prefix='/news', tags=['news'])
 
-
+# /////////////////////
 def get_db():
     db = SessionLocal()
     try:
