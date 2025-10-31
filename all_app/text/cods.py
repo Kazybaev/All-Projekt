@@ -8,7 +8,7 @@ import streamlit as st
 
 from all_app.db.database import SessionLocal
 from all_app.db.models import Code
-# //////////
+
 
 code_router = APIRouter(prefix="/cods", tags=["cods"])
 
