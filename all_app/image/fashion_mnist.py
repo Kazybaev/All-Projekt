@@ -128,7 +128,7 @@ def fashion_streamlit():
                 db: Session = next(get_db())
 
                 record = Fashion(
-                    image=file_image2.name,  # сохраняем имя файла
+                    image=file_image2.name,
                     label=label
                 )
                 db.add(record)
