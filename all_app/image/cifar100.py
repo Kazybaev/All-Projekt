@@ -8,8 +8,6 @@ from fastapi import APIRouter
 from sqlalchemy.orm import Session
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
-
-# ---- Database helpers (adapt to your project) ----
 from all_app.db.database import SessionLocal
 from all_app.db.models import Cifar100
 
