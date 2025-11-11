@@ -11,7 +11,7 @@ import io
 from all_app.db.models import Car
 from all_app.db.database import SessionLocal
 
-
+#......
 def get_db():
     db = SessionLocal()
     try:
