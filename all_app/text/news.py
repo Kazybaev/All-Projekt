@@ -87,7 +87,7 @@ def news_streamlit():
                 db.commit()
                 db.refresh(news_db)
 
-                st.success(f"✅ Класс: {predicted_class}")
+                st.success(f"Класс: {predicted_class}")
 
             except Exception as e:
                 st.exception(f'Error: {e}')
