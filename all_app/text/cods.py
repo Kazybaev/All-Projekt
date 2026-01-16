@@ -88,7 +88,7 @@ def code_streamlit():
             db.commit()
             db.refresh(code_sample)
 
-            st.success(f"✅ Определён язык: {predicted_class}")
+            st.success(f"Определён язык: {predicted_class}")
 
         except Exception as e:
-            st.exception(f"❌ Ошибка: {e}")
+            st.exception(f"Ошибка: {e}")
