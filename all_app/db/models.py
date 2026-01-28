@@ -4,7 +4,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from typing import Optional
 from all_app.db.database import Base
 
-# ////////
+# ///////////
 class Cifar100(Base):
     __tablename__ = "cifar100"
 
