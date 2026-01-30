@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 from fastapi import Depends
 from all_app.db.models import AllClass
 import streamlit as st
-# /////////////
+# //////////
 allclass_router = APIRouter(prefix='/all_class', tags=['all_class'])
 
 
