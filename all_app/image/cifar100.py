@@ -10,7 +10,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 from all_app.db.database import SessionLocal
 from all_app.db.models import Cifar100
-# ...
+# .
 cifar_router = APIRouter(prefix='/cifar100', tags=['cifar'])
 
 def get_db():
