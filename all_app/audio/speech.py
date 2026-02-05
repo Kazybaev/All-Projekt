@@ -12,7 +12,6 @@ from audio_recorder_streamlit import audio_recorder
 from all_app.db.models import Speech
 from all_app.db.database import SessionLocal
 
-# ----------
 # === Настройки и модель ===
 
 labels = torch.load("labels.pth")
