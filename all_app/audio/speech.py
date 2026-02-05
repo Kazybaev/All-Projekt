@@ -14,7 +14,7 @@ from all_app.db.database import SessionLocal
 
 # ---------------------------
 # === Настройки и модель ===
-# -----------------------
+# ---------------
 
 labels = torch.load("labels.pth")
 num_classes = len(labels)
