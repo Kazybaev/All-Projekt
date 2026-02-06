@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from torchtext.data import get_tokenizer
 from googletrans import Translator
 from sqlalchemy.orm import Session
-# /////
+
 from all_app.db.database import SessionLocal
 from all_app.db.models import News
 import streamlit as st
