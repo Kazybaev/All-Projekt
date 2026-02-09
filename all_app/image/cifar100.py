@@ -21,7 +21,7 @@ def get_db():
         db.close()
 
 
-# ---- Your model definition
+# ---- Your model 
 class CheckImage(nn.Module):
     def __init__(self):
         super().__init__()
