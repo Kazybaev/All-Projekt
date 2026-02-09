@@ -20,8 +20,7 @@ def get_db():
     finally:
         db.close()
 
-
-# ---- Your model 
+ 
 class CheckImage(nn.Module):
     def __init__(self):
         super().__init__()
